@@ -1,0 +1,115 @@
+import { StyleSheet, Platform } from 'react-native';
+
+export const globalStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F8FAFC',
+    paddingTop: Platform.OS === 'android' ? 45 : 55,
+    paddingHorizontal: 20,
+  },
+  header: {
+  fontSize: 26,
+  fontWeight: '700',
+  color: '#0F172A',
+  textAlign: 'center',
+  marginBottom: 20,
+},
+  inputWrapper: {
+    flexDirection: 'row',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 6,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#E2E8F0',
+  },
+  input: {
+    flex: 1,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    fontSize: 15,
+    color: '#0F172A',
+  },
+  addButton: {
+    backgroundColor: '#2563EB',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    borderRadius: 8,
+  },
+  addButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '600',
+    fontSize: 14,
+  },
+  taskItem: {
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#E2E8F0',
+  },
+  taskItemCompleted: {
+    backgroundColor: '#F1F5F9',
+    borderColor: '#E2E8F0',
+    opacity: 0.7,
+  },
+  taskContent: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: 10,
+  },
+  checkCircle: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    borderWidth: 2,
+    borderColor: '#94A3B8',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  checkCircleCompleted: {
+    borderColor: '#10B981',
+    backgroundColor: '#10B981',
+  },
+  checkmarkIcon: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  taskText: {
+    fontSize: 15,
+    color: '#0F172A',
+    flex: 1,
+  },
+  completedTaskText: {
+    textDecorationLine: 'line-through',
+    color: '#94A3B8',
+  },
+  deleteButton: {
+    backgroundColor: '#FEE2E2',
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: 6,
+  },
+  deleteButtonText: {
+    color: '#EF4444',
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  emptyContainer: {
+    alignItems: 'center',
+    marginTop: 60,
+  },
+  emptyText: {
+    color: '#94A3B8',
+    fontSize: 15,
+  },
+});
